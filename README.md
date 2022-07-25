@@ -1,6 +1,6 @@
 # Research Paper Template
 
-![](../../workflows/build/badge.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/1bb69b1e-36a5-4bff-8db5-920ad7209fab/deploy-status)](https://app.netlify.com/sites/readytoresearch/deploys)
+![](../../workflows/build/badge.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/4db2b979-8659-4995-829c-75236c47a5e6/deploy-status)](https://app.netlify.com/sites/videogameanalysis/deploys)
 
 A template for emerging researchers who want to write a short research paper in the field of data science.
 
