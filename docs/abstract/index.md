@@ -21,6 +21,7 @@ Gaming doesn't really have a negative effect on people's lives. Only playing abo
 
 ### Discussion
 In order to reduce the amount of hours spent on gaming, there are some changes in lifestyle that you can make. Such as:
-- x
-- y
-- z
+
++ x
++ y
++ z
