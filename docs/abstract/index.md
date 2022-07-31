@@ -7,14 +7,14 @@ hide:
 # Abstract
 
 ### Introduction
-A popular conception about video games is that they aren't good, psychologically speaking; this is however an orthodoxed ideology and this research paper is set out to prove it wrong.
+A popular conception about video games is that they aren't good, psychologically speaking; this is however an orthodoxed ideology and this research paper is set out to prove it wrong. **Why is this important?** To give a contradictory view -- supported with data and analysis -- to a matter that lets people thoroughly understand exactly what is going on, and form their own opinions instead of either living in the dark or just accpeting the popular opinion without any research of their own. 
 
 
 ### Method
-method
+To prove the point, the programming language *Python* is being used for machine learning by analysing a dataset given in the .csv format. Numerous *Python* libraries are being used to complement this work: *Pandas*, *SciKit*, and *Numpy* to name a few. 
 
 ### Results
-results
+Using these tools, a model can be created that predicts (using mathematics and statistics) that helps predict the threshold at which video gaming becomes bad, not that video games inherently are a waste of time and energy.
 
 ### Analysis
 analysis
