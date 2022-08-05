@@ -62,3 +62,5 @@ print(gad_medians)
 print(gad_modes)
 print(gad_range)
 print(gad_stds)
+
+print(df.dtypes)
