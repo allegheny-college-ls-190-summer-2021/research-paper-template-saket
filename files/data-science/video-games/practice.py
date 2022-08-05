@@ -70,6 +70,58 @@ print(gad_stds, "--> STATISTICAL STANDARD DEVIATION")
 
 ## SUMMARY STATISTICS FOR ALL GAD --> END
 
-
+print()
+print()
+print()
 
 ## SUMMARY STATISTICS FOR ALL SWL --> START
+
+swl_means = []
+swl_medians = []
+swl_modes = []
+
+for i in range(1, 6):
+    swl_means.append(df[f"SWL{i}"].mean())
+
+for i in range(1, 6):
+    swl_medians.append(df[f"SWL{i}"].median())
+
+for i in range(1, 6):
+    swl_modes.append(df[f"SWL{i}"].mode())
+
+
+# measures of spread
+swl_stds = []
+swl_range = []
+swl_iqr = []
+
+for i in range(1, 6):
+    swl_stds.append(df[f"SWL{i}"].std())
+
+for i in range(1, 6):
+    q1 = df[f"SWL{i}"].quantile(0.25)
+    q3 = df[f"SWL{i}"].quantile(0.75)
+
+    swl_iqr.append(q3 - q1)
+
+for i in range(1, 6):
+    max_ = df[f"SWL{i}"].max()
+    min_ = df[f"SWL{i}"].min()
+    
+    range_ = max_ - min_
+
+    swl_range.append(range_)
+
+print(swl_iqr, "--> INTERQUARTILE RANGE")
+print()
+print(swl_means, "--> ARITHMETIC MEANS")
+print()
+print(swl_medians, "--> STATISTICAL MEDIANS")
+print()
+print(swl_modes, "--> STATISTICAL MODES")
+print()
+print(swl_range, "--> DATA RANGE")
+print()
+print(swl_stds, "--> STATISTICAL STANDARD DEVIATION")
+
+## SUMMARY STATISTICS FOR ALL SWL --> END
