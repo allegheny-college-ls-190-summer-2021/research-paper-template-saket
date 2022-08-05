@@ -2,7 +2,7 @@
 # note that this was specified as a project
 # dependency in the pyproject.toml file
 import pandas
-# import matplotlib
+import matplotlib
 import pathlib
 
 DATASET_PATH = pathlib.Path(r"C:\\Users\\saket\\research-paper-template-saket\\files\\data-science\\video-games\\GamingStudy_data.csv")
@@ -43,24 +43,33 @@ for i in range(1, 8):
     gad_stds.append(df[f"GAD{i}"].std())
 
 for i in range(1, 8):
-    q1 = df[f"GAD{i}".quantile(0.25)]
-    q3 = df[f"GAD{i}".quantile(0.75)]
+    q1 = df[f"GAD{i}"].quantile(0.25)
+    q3 = df[f"GAD{i}"].quantile(0.75)
 
     gad_iqr.append(q3 - q1)
 
+# q1 = df["GAD1"].quantile(0.25)
+# q3 = df["GAD1"].quantile(0.75)
+# gad_iqr.append(q3 - q1)
+
 for i in range(1, 8):
-    max_ = df[f"GAD{i}".max()]
-    min_ = df[f"GAD{i}".min()]
+    max_ = df[f"GAD{i}"].max()
+    min_ = df[f"GAD{i}"].min()
     
     range_ = max_ - min_
 
     gad_range.append(range_)
+# max_ = df["GAD1".max()]
+# min_ = df["GAD1".min()]
+# gad_range.append(max_ - min_)
 
+# print(gad_iqr)
+# print(gad_means)
+# print(gad_medians)
+# print(gad_modes)
+# print(gad_range)
+# print(gad_stds)
+# print(df.dtypes)
+# print(df["GAD1"].quantile(0.25))
 print(gad_iqr)
-print(gad_means)
-print(gad_medians)
-print(gad_modes)
 print(gad_range)
-print(gad_stds)
-
-print(df.dtypes)
