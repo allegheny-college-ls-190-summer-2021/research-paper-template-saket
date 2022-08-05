@@ -48,10 +48,6 @@ for i in range(1, 8):
 
     gad_iqr.append(q3 - q1)
 
-# q1 = df["GAD1"].quantile(0.25)
-# q3 = df["GAD1"].quantile(0.75)
-# gad_iqr.append(q3 - q1)
-
 for i in range(1, 8):
     max_ = df[f"GAD{i}"].max()
     min_ = df[f"GAD{i}"].min()
@@ -59,17 +55,21 @@ for i in range(1, 8):
     range_ = max_ - min_
 
     gad_range.append(range_)
-# max_ = df["GAD1".max()]
-# min_ = df["GAD1".min()]
-# gad_range.append(max_ - min_)
 
-# print(gad_iqr)
-# print(gad_means)
-# print(gad_medians)
-# print(gad_modes)
-# print(gad_range)
-# print(gad_stds)
-# print(df.dtypes)
-# print(df["GAD1"].quantile(0.25))
-print(gad_iqr)
-print(gad_range)
+print(gad_iqr, "--> INTERQUARTILE RANGE")
+print()
+print(gad_means, "--> ARITHMETIC MEANS")
+print()
+print(gad_medians, "--> STATISTICAL MEDIANS")
+print()
+print(gad_modes, "--> STATISTICAL MODES")
+print()
+print(gad_range, "--> DATA RANGE")
+print()
+print(gad_stds, "--> STATISTICAL STANDARD DEVIATION")
+
+## SUMMARY STATISTICS FOR ALL GAD --> END
+
+
+
+## SUMMARY STATISTICS FOR ALL SWL --> START
